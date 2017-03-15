@@ -3,6 +3,9 @@ package sddtu.org.tasknetwork;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,8 +16,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    String[] data={"Doctors","Lawyers","Career Counselers","Property Counsultants","Brand Counsaltants","Software Counsultant"};
+
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter recyclerAdapter;
+    private RecyclerView.LayoutManager recyclerManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +34,12 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+     recyclerView=(RecyclerView)findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        recyclerManager=new GridLayoutManager(MainActivity.this,2);
+        recyclerView.setLayoutManager(recyclerManager);
+        recyclerAdapter=new RecyclerAdapter(getDataSet());
+        recyclerView.setAdapter(recyclerAdapter);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -50,6 +59,16 @@ public class MainActivity extends AppCompatActivity
         } else {
             super.onBackPressed();
         }
+    }
+
+
+    private ArrayList<CardData> getDataSet(){
+        ArrayList results=new ArrayList<CardData>();
+        for(int i=0;i<data.length;i++){
+            CardData cardData=new CardData(data[i]);
+            results.add(i,cardData);
+        }
+        return results;
     }
 
     @Override
