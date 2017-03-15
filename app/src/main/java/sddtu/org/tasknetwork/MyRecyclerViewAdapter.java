@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by Dell on 3/15/2017.
+ * Created by ASHISH KUMAR on 3/15/2017.
  */
 
 public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.DataObjectHolder> {

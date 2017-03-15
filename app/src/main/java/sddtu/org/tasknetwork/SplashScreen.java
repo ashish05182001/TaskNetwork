@@ -7,7 +7,7 @@ import android.os.Bundle;
 import java.lang.reflect.AccessibleObject;
 
 /**
- * Created by Dell on 3/15/2017.
+ * Created by ASHISH KUMAR on 3/15/2017.
  */
 
 public class SplashScreen extends Activity {
