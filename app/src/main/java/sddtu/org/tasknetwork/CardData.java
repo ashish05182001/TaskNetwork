@@ -18,3 +18,4 @@ public class CardData {
         this.t1 = t1;
     }
 }
+

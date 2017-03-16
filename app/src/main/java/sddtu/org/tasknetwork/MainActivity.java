@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity
 
 
     private ArrayList<CardData> getDataSet(){
-        ArrayList results=new ArrayList<CardData>();
+        ArrayList<CardData> results=new ArrayList<CardData>();
         for(int i=0;i<data.length;i++){
             CardData cardData=new CardData(data[i]);
             results.add(i,cardData);
