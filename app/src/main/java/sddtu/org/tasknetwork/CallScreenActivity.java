@@ -1,7 +1,6 @@
 package sddtu.org.tasknetwork;
 
 import android.media.AudioManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,10 +14,10 @@ import com.sinch.android.rtc.AudioController;
 import com.sinch.android.rtc.PushPair;
 import com.sinch.android.rtc.calling.Call;
 import com.sinch.android.rtc.calling.CallEndCause;
-import com.sinch.android.rtc.calling.CallListener;
 import com.sinch.android.rtc.calling.CallState;
 import com.sinch.android.rtc.video.VideoCallListener;
 import com.sinch.android.rtc.video.VideoController;
+
 
 import java.util.List;
 import java.util.Locale;
@@ -196,6 +195,9 @@ public class CallScreenActivity extends BaseActivity {
             RelativeLayout localView = (RelativeLayout) findViewById(R.id.localVideo);
             localView.removeView(vc.getLocalView());
             mVideoViewsAdded = false;
+        }
+        else {
+            Log.e("TAG","error");
         }
     }
 

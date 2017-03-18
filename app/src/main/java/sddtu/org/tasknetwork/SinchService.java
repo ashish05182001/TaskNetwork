@@ -19,10 +19,9 @@ import android.util.Log;
 
 public class SinchService extends Service {
 
-    private static final String APP_KEY = "7ec1a45b-65ff-4b49-b3a8-3acb003d253e";
-    private static final String APP_SECRET = "GaZFi0xnYUaAKn/QpXGZlA==";
+    private static final String APP_KEY = "7056e48e-3f5f-4b10-b3ae-a0ef868642a5";
+    private static final String APP_SECRET = "QXsJ1WQysU2akh6VPPhkcA==";
     private static final String ENVIRONMENT = "sandbox.sinch.com";
-
     public static final String CALL_ID = "CALL_ID";
     static final String TAG = SinchService.class.getSimpleName();
 
