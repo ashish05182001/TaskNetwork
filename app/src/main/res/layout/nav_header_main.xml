@@ -23,11 +23,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
+<<<<<<< HEAD
         android:text="Rohan Aggarwal"
+=======
+        android:id="@+id/text_name"
+        android:text="Android Studio"
+>>>>>>> 15c82e3e4d6511788aab6661d4aedfb40eb4c27b
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="android.studio@android.com" />
