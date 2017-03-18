@@ -13,6 +13,7 @@ import android.widget.Button;
 
 public class LoginActivity extends Activity {
     Button signIn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -22,7 +23,7 @@ public class LoginActivity extends Activity {
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+                Intent intent=new Intent(LoginActivity.this,CategoriesActivity.class);
                 startActivity(intent);
             }
         });
