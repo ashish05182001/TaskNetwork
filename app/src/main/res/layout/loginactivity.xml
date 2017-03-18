@@ -53,4 +53,12 @@
         android:background="@android:color/holo_orange_dark"
         android:text="Sign in" />
 
+    <com.google.android.gms.common.SignInButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/google_butt"
+        android:layout_below="@id/signin"
+        android:layout_centerHorizontal="true"
+        ></com.google.android.gms.common.SignInButton>
+
 </RelativeLayout>

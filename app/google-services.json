@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1063981096541",
+    "project_id": "tasknetwork-161718"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063981096541:android:c2eb929ea997dc08",
+        "android_client_info": {
+          "package_name": "sddtu.org.tasknetwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063981096541-prcs4gij595aubhmdtr4kvrh0ma75p68.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sddtu.org.tasknetwork",
+            "certificate_hash": "a7891d2eab023390e2a680bd2bc219065eeda8af"
+          }
+        },
+        {
+          "client_id": "1063981096541-bfip7jb24gvrt3ine2e8qjh819gt3taj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHa2-ZcgEP0UMgiC_niVD9ZbHqXJ5-Wng"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
