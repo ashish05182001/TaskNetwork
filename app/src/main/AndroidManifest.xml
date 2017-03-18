@@ -7,8 +7,7 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.CAMERA"/>
-    
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -30,14 +29,16 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".CustomerSPActivity" />
         <activity android:name=".SearchList" />
-        <activity android:name=".SnichLoginActivity" android:exported="true"/>
-
+        <activity
+            android:name=".SnichLoginActivity"
+            android:exported="true" />
         <activity android:name=".PlaceCallActivity" />
         <activity android:name=".CallScreenActivity" />
-        <activity android:name=".IncomingCallActivity"></activity>
-        <service android:name=".SinchService"></service>
+        <activity android:name=".IncomingCallActivity" />
 
+        <service android:name=".SinchService" />
 
+        <activity android:name=".PaymentActivity" android:exported="true"></activity>
     </application>
 
 </manifest>
