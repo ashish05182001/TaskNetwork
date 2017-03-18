@@ -19,7 +19,8 @@
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".CustomerSPActivity" />
-        <activity android:name=".SearchList" />
+        <activity android:name=".ProviderList"
+            android:label="Choose the provider"/>
         <activity android:name=".CategoriesActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true">

@@ -1,5 +1,6 @@
 package sddtu.org.tasknetwork;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -108,6 +109,12 @@ public class CategoriesActivity extends AppCompatActivity
                 super(v);
                 mTitleTv = (TextView) v.findViewById(R.id.textViewTitle);
                 mImageView = (ImageView) v.findViewById(R.id.imageViewCategory);
+                v.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(CategoriesActivity.this, ProviderList.class));
+                    }
+                });
             }
         }
     }
