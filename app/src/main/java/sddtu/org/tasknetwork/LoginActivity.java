@@ -25,12 +25,15 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 public class LoginActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
     Button signIn;
+<<<<<<< HEAD
+=======
     SignInButton googlesignin;
     GoogleApiClient googleApiClient;
     String googlename;
     String email;
     String img_url;
     private static final int RC_SIGN_IN = 9001;
+>>>>>>> 15c82e3e4d6511788aab6661d4aedfb40eb4c27b
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -47,7 +50,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+                Intent intent=new Intent(LoginActivity.this,CategoriesActivity.class);
                 startActivity(intent);
             }
         });

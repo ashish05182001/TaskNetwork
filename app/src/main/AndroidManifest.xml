@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="sddtu.org.tasknetwork">
 
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+=======
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -15,10 +18,12 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +33,14 @@
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".CustomerSPActivity" />
+
+        <activity android:name=".ProviderList"
+            android:label="Choose the provider"/>
+        <activity android:name=".CategoriesActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+
+        </activity>
         <activity android:name=".SearchList" />
         <activity
             android:name=".SnichLoginActivity"
@@ -39,6 +52,7 @@
         <service android:name=".SinchService" />
 
         <activity android:name=".PaymentActivity" android:exported="true"></activity>
+
     </application>
 
 </manifest>
