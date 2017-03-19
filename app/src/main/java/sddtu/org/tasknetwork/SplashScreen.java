@@ -21,7 +21,7 @@ public class SplashScreen extends Activity {
             public void run(){
                 try {
                     sleep(3000);
-                    Intent intent=new Intent(SplashScreen.this,LoginActivity.class);
+                    Intent intent=new Intent(SplashScreen.this,CustomerSPActivity.class);
                     startActivity(intent);
                     finish();
                 } catch (InterruptedException e) {

@@ -15,6 +15,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
@@ -22,11 +26,12 @@ import java.util.ArrayList;
  * Created by ASHISH KUMAR on 3/15/2017.
  */
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     String[] data={"Doctors","Lawyers","Career Counselers","Property Counsultants","Brand Counsaltants","Software Counsultant"};
-
+    ImageView imageView;
+    String name,email;
+    TextView Name,Email;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter recyclerAdapter;
     private RecyclerView.LayoutManager recyclerManager;
@@ -37,6 +42,15 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        imageView = (ImageView) findViewById(R.id.imageView);
+        name = getIntent().getStringExtra("Name");
+        email = getIntent().getStringExtra("Email");
+        String image = getIntent().getStringExtra("ImageUrl");
+
+        Name = (TextView) findViewById(R.id.text_name);
+        Email = (TextView)findViewById(R.id.text_email);
+        Glide.with(this).load(image).into(imageView);
 
      recyclerView=(RecyclerView)findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
