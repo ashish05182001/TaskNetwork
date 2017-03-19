@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <!--old ones-->
     <!--<color name="colorPrimary">#3F51B5</color>-->
     <!--<color name="colorPrimaryDark">#303f9f</color>-->
@@ -9,5 +10,10 @@
     <color name="colorPrimary">#FF4081</color>
     <color name="colorPrimaryDark">#ad1457</color>
     <color name="colorAccent">#303f9f</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="sinch_purple">#000</color>
 
 </resources>
